@@ -1,0 +1,83 @@
+<!--
+	TP1 : Liste
+	Pour commencer, il est inutile d'utiliser la totalité des données, on va juste faire la carte "The Lovers"
+	Afficher dans une liste :
+	le fichier ET le nom de la carte comme titre ( h3 )
+	une image ( img )
+	la description en 3ème élement ( p )
+-->
+<!--
+	TP2 : Tableau
+	Comme pour le TP1, on va juste faire la carte "The Lovers"
+	Afficher dans un tableau :
+	une image ( img en complétant l'attribut alt )
+	le fichier ET le nom de la carte comme titre ( sans la balise h3 )
+	la description en 3ème élement ( sans la balise p )
+-->
+<!--
+	TP3 : Bootstrap ( importer leurs fichiers )
+	On va afficher 4 cartes cette fois ci
+	Afficher chaque carte avec ( de haut en bas ):
+	le chiffre ET le nom de la carte comme titre ( dans un h3 )
+	une image ( img en complétant l'attribut alt )
+	la description en 3ème élement ( sans la balise p )
+
+	Ces cartes doivent être dans un div de classe row ( tous les élements d'un row sont affichés sur une seule ligne)
+		Chaque carte est dans un col-sm-3 ( 3 correspond à 1/4 d'un row) ( 1/4 * 4 cartes = une seule ligne = BINGO !)
+-->
+<!--
+	TP4	
+	Header ( navbar ) ( lien entre les fichiers de tp dans un dropdown)
+	jombotron
+	foorter avec ton copyright
+	Le titre à droite de l'image ( la classe de l'image : col-sm-2 et la classe du titre col-sm-10)
+	Afficher que 2 cartes pour un téléphone
+	image avec un cadre autour
+-->
+data = [[
+	"Icône","Chiffre","Nom de la carte","Effet"
+],[
+	"0_The_Fool.png","I","The Fool","Téléporte le joueur à la première salle du niveau en cours."
+],[
+	"I_The_Magician.png","I","The Magician","Les tirs du joueur suivent les ennemis jusqu'à ce que vous quittiez la salle actuelle (même effet que <i>Spoon Bender).</i>"
+],[
+	"II_The_High_Priestess.png","II","The High Priestess","p>Invoque le pied de Mom pour écraser un ennemi au hasard (dans une salle vide, visera le joueur), infligeant d'énormes dégâts, suffisament pour tuer la plupart des Boss et enlever la moitié de la barre de vie de <i>Maman, </i>si utilisé contre elle).<i>Note: Fonctionne comme une explosion. Détruit les rochers et peut ouvrir les Salles Secrètes.</i>"
+],[
+	"III_The_Empress.png","III","The Empress","Transforme le joueur en démon, augmente ses dégats de 2 et sa vitesse de 1 jusqu'à ce qu'il sorte de la salle actuelle (même effet que <i>Whore of Babylon</i>)."
+],[
+	"IV_The_Emperor.png","IV","The Emperor","Téléporte le joueur à la salle du Boss."
+],[
+	"V_The_Hierophant.png","V","The Hierophant","Fait apparaître 2 coeurs d'esprit (bleus)."
+],[
+	"VI_The_Lovers.png","VI","The Lovers","Fait apparaître 2 coeurs rouges"
+],[
+	"VII_The_Chariot_flipped.png","VII","The Chariot","Vous donne une invincibilité temportaire et vous permet de blesser les ennemis au toucher. Cependant, vous ne pouvez pas attaquer, à part si vous tenez le couteau de <i>Maman</i> (même effet que <i>My Little Unicorn</i>)."
+],[
+	"VIII_Justice.png","VIII","Justice","Fait apparaître une bombe, un coeur, une pièce et une clé à proximité du joueur. Cela peut aussi être respectivement, une bombe Troll, une moitié de coeur ou un coeur d'esprit, ou une pièce de nickel."
+],[
+	"IX_The_Hermit.png","IX","The Hermit","Téléporte le joueur au <i>Magasin.</i>"
+],[
+	"X_Wheel_of_Fortune.png","X","Wheel of Fortune","Fait apparaître une <i>Machine à Sous (ou une Machine diseuse de bonne aventure avec Wrath of the Lamb)</i>"
+],[
+	"XI_Strength.png","XI","Strength","Agrandit le joueur, augmente son maximum de vie et ses dommages jusqu'à ce qu'il sorte de la salle actuelle (même effet que <i>Magic Mushroom</i>).<i>Note:&nbsp;??? reçoit un coeur d'esprit permanent au lieu qu'une augmentation temporaire de son maximum de vie.</i>"
+],[
+	"XII_The_Hanged_Man.png","XII","The Hanged Man","Fait disparaître le corps du joueur et lui autorise de voler au dessus des obstacles, pics et trous jusqu'à ce qu'il quitte la salle actuelle (même effet que <i>Transcendence</i>)."
+],[
+	"XIII_Death.png","XIII","Death","Blesse fortement tous les ennemis présents dans la salle (même effet que <i>L</i>e<b> <i>Necronomicon</i></b>)."
+],[
+	"XVI_Temperance.png","XIV","Temperance","Fait apparaître une <i>Machine de Don de Sang</i>."
+],[
+	"XV_The_Devil.png","XV","The Devil","Augmente vos dégats jusqu'à ce que vous quittiez la salle actuelle (même effet que le <i>Book of Belial</i>)."
+],[
+	"XIV_The_Tower.png","XVI","The Tower","Fait apparaître 6 bombes Trolls à divers endroits de la salle (même effet que <i>Anarchist's Cookbook</i>)."
+],[
+	"The_Stars.png","XVII","The Stars","Téléporte le joueur dans la <i>Salle de l'Objet</i>. Si aucune <i>Salle de l'Objet</i> n'est présente dans le niveau, la carte fonctionne comme un <i>Teleport! </i>(téléporte dans une salle au hasard)."
+],[
+	"XVIII_The_Moon.png","XVIII","The Moon","Téléporte le joueur dans la <i>Salle Secrète</i>."
+],[
+	"XIX_The_Sun.png","XIX","The Sun","Guérit complétement le joueur, blesse tous les ennemis, et révèle complètement la carte du niveau actuel (même effet que <i>XXI The World</i>, <i>XIII Death </i>et une pilule de santé complète combinés)."
+],[
+	"XX_Judgement.png","XX","Judgement","Fait apparaître un mendiant."
+],[
+	"The_World-flipped.png","XXI","The World","Révèle la carte complète et l'emplacement de toutes les salles spéciales du niveau actuel. (même effet que la Carte au Trésor)"
+]];
